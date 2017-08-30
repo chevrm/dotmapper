@@ -35,7 +35,7 @@ along with this program (filename LICENSE).  If not, see
 
 ## **Example Usage:**
 
-### Update from a MIBiG json repository:
+### Make dotplots for a reference vs all of MIBiG:
     > perl dotmapper.pl reference.fna mibig/*.gbk
 
 Valid ext: *fna, *fasta, *gb, *gbk
