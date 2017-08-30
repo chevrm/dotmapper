@@ -30,3 +30,12 @@ along with this program (filename LICENSE).  If not, see
 * python (packages: numpy, matplotlib)
 * perl (packages: Bio::SeqIO, Cwd 'abs_path')
 * blastn
+
+#####################################################################
+
+## **Example Usage:**
+
+### Update from a MIBiG json repository:
+    > perl dotmapper.pl reference.fna mibig/*.gbk
+
+Valid ext: *fna, *fasta, *gb, *gbk
