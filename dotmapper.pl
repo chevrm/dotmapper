@@ -5,6 +5,9 @@ use warnings;
 use Bio::SeqIO;
 use Cwd 'abs_path';
 
+## usage:
+##     perl dotmapper.pl reference.gbk q1.gbk q2.gbk...
+
 ## Setup script path
 my $script = abs_path($0);
 my @sp = split(/\//, $script);
@@ -13,7 +16,7 @@ my $script_dir = join('/', @sp[0..$#sp-1]);
 my ($ref, @tocompare) = @ARGV;
 
 my $threads = 8; ## default = 8
-my $evalue = '1e-3'; ## default = '1e-3'
+my $evalue = '1'; ## default = '1'
 my $idthresh = 0; ## default = 0
 my $maxstep = 300; ## default = 300bp
 my $nwin = 300;  # default = 300bp
