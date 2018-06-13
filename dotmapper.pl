@@ -139,7 +139,7 @@ foreach my $comp (@tocompare){
 	    print "Generating heatmap...";
 	    my $png = join(".", $rpref, $cpref, "png");
 	    my ($aw, $bw) = ($refwincount-1,$compwincount-1);
-	    system("python $script_dir/clustheat.py $rpref $cpref $png $aw $bw");
+	    system("python $script_dir/fireheat.py $rpref $cpref $png $aw $bw");
 	    print "DONE\n\n";
 	}
     }
